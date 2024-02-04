@@ -20,7 +20,7 @@ if (isset($_GET['id'])) {
             $stmt->execute([$_GET['id']]);
             $msg = 'You have deleted the contact!';
         } else {
-            // User clicked the "No" button, redirect them back to the read page
+            // User clicked the "No" button, redirect them back to the read 
             header('Location: read.php');
             exit;
         }
